@@ -1,0 +1,23 @@
+<app-menu></app-menu>
+<div class="container"> <!--div = division--> <!--container = contenedor-->
+    <div class="row mt-5"> <!--row = fila-->
+        <div class="col-md-4 mx-auto">
+            <h4 class="text-center">Update Product</h4> <!--h1,h2,h3 = encabezado-->
+            <form (ngSubmit)="onUpdate()" novalidate #formUpdateProduct="ngForm">
+                    <!--evento para actualizar-->
+                <div class="mb-3"> <!--mb = margin button-->
+                    <input type="text" class="form-control" id="name" name="name" placeholder="product name" autocomplete="off" required [(ngModel)]="product.name">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="price" name="price" placeholder="product price" autocomplete="off" required [(ngModel)]="product.price">
+                </div>
+                <button class="btn btn-outline-success w-100 mb-3" [disabled]="!formUpdateProduct.valid">
+                    <i class="fas fa-edit"></i>Update
+                </button>
+                <button class="btn btn-outline-primary w-100" routerLink="/">
+                    <i class="fas fa-arrow-alt-circle-left"></i>Back
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
