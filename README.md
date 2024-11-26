@@ -1,3 +1,18 @@
+Arquitectura MVC (Modelo-Vista-Controlador)
+ 
+  -Modelo: El modelo de datos representa los productos. Un producto puede tener propiedades como id, nombre, precio, cantidad, descripcion, etc. Este modelo es utilizado para manejar la 
+  información de los productos, y se define en una clase de TypeScript (por ejemplo, Producto.ts).
+
+  -Vista: La vista está conformada por los componentes de Angular que interactúan con el usuario. Los formularios de creación, actualización y eliminación de productos se presentan de      manera visual. Los datos se muestran en tablas o listas, y las acciones (como editar, eliminar o agregar) son accesibles a través de botones.
+  
+  -Controlador: En Angular, el controlador se implementa a través de servicios que gestionan las interacciones entre el frontend y el backend. Los servicios en Angular se encargan de       realizar las peticiones HTTP al servidor para crear, leer, actualizar o eliminar productos, y manejar las respuestas.
+
+SweetAlert y Toast para Notificaciones
+  Para mejorar la experiencia del usuario, se integran notificaciones visuales usando SweetAlert2 y Toast. Estas librerías permiten mostrar mensajes claros de éxito, error o advertencia.
+
+Observables
+  Observables se utilizan ampliamente en Angular para manejar las respuestas asincrónicas de las solicitudes HTTP. Los servicios de Angular devuelven observables, lo que permite           suscribirse a las respuestas del servidor y gestionar las actualizaciones de datos en la interfaz de usuario.
+
 # CrudMongoFrontProduct
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
